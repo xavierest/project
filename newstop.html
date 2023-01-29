@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- build:css css/main.css -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+
+</head>
+
+
+<body>
+
+  <header class="p-3 text-bg-dark sticky-top">
+    <div class="container-fluid">
+      <div class=" d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img class="rounded-circle " src="img/icon.png" width="20px" height="25px">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="feature.html" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="aboutus.html" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+            aria-label="Search">
+        </form>
+
+        <div class="text-end">
+
+          <button type="button" class="btn btn-outline-light" id="loginButton">Login</button>
+          <button type="button" class="btn btn-light" id="registerButton">Register</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-bg-dark">
+          <h3 class="modal-title mb-4">Login</h3>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="container-fluid">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 mb-2">
+                  <label class="sr-only" for="loginEmail">Email adress</label>
+                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-12 mb-2">
+                  <label class="sr-only" for="loginPassword">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label text-light">Remember me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row d-grid gap-2 d-flex justify-content-end mt-4 mb-2">
+
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-light">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="registerModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-bg-dark">
+          <h3 class="modal-title mb-4">Register</h3>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="container-fluid">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 mb-2">
+                  <label class="sr-only" for="loginEmail">Email adress</label>
+                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-12 mb-2">
+                  <label class="sr-only" for="loginPassword">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-row d-grid gap-2 d-flex justify-content-end mt-4 mb-2">
+
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-light">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class=" row p-4 p-md-5 mb-1 text-bg-dark">
+      <div class="col-12 px-0">
+        <h1 class="display-4 fst-italic">Anticipated Games for 2023: Part I</h1>
+        <p class="lead my-3">List of upcoming games that we can’t wait to play…</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="newsTitle">
+    <div class="row mb-1">
+      <div class="col">
+        <article>
+          <h3 class="mb-4 text-center mt-4">Octropath Traveler II</h3>
+          <img src="img/octopath.jpg" class="img-fluid mt-3 mb-3" alt="Octopath Traveler" id="imgsize">
+          <p class="text-right mb-4">Posted on: February 26, 2023 by Xavi</p>
+          <p class="mb-5">Take an adventure with eight travelers who venture into the world of Solistia for their own
+            reasons.
+            There’s a bustling land to explore in this beautifully pixelated world. </p>
+          <div class="ratio ratio-16x9 mb-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-jXBsqSXD0U"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+          <h3 class="mb-4 text-center mt-4">Resident Evil 4 Remake</h3>
+          <img src="img/resident-evil.jpg" class="img-fluid mt-3 mb-5  w-100" alt="Resident Evil" id="imgsize">
+
+          <p class="mb-5">Resident Evil 4 Remake is a reimagined version of the original storyline. This story takes
+            place 6 years
+            after the biological disaster that happened in Raccoon City. Leon is sent to rescue the president’s
+            daughter from a secluded European village.</p>
+          <div class="ratio ratio-16x9 mb-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/E69tKrfEQag"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+          <h3 class="mb-4 text-center mt-4">The Legend of Zelda: tears of Kingdom </h3>
+          <img src="img/zelda.jpg" class="img-fluid mt-3 mb-5 w-100" alt="Link" id="imgsize">
+          <p class="mb-5">In this sequel, following the events of The Legend of Zelda: breath of the wild,
+            Link sets into a new adventure that includes the skies above Hyrule. </p>
+          <div class="ratio ratio-16x9 mb-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2SNF4M_v7wc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+
+          <h3 class="mb-4 text-center mt-4">Final Fantasy XVI</h3>
+          <img src="img/ff16.png" class="img-fluid mt-3 mb-5 w-100" alt="final fantasy XVI" id="imgsize">
+          <p class="mb-5">Final Fantasy XVI is the sixteenth main installment from the Final Fantasy series, exclusive
+            for the
+            PlayStation 5. The story takes place on the continent of Valisthea, where Clive Rosfield is put on a path
+            of revenge after the tragic attack on the Dutchy.
+          </p>
+          <div class="ratio ratio-16x9 mb-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wvunu2e29tc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm ">
+          <ul class="list-inline">
+            <h5>Links</h5>
+          </ul>
+          <li class="list-inline-item"><a href="index.html">Home</a></li>
+          <li class="list-inline-item"><a href="feature.html">Feature</a></li>
+          <li class="list-inline-item"><a href="aboutus.html">About</a></li>
+
+        </div>
+        <div class="col col-sm ">
+          <h5>Social</h5>
+          <a class="btn btn-social-icon btn-dark" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a class="btn btn-social-icon btn-dark" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-dark" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a class="btn btn-social-icon btn-dark" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+
+  </footer>
+
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>

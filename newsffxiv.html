@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- build:css css/main.css -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
+
+
+<body>
+
+  <header class="p-3 text-bg-dark sticky-top">
+    <div class="container-fluid">
+      <div class=" d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img class="rounded-circle " src="img/icon.png" width="20px" height="25px">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+          <li><a href="feature.html" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="aboutus.html" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+            aria-label="Search">
+        </form>
+
+        <div class="text-end">
+
+          <button type="button" class="btn btn-outline-light" id="loginButton">Login</button>
+          <button type="button" class="btn btn-light" id="registerButton">Register</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-bg-dark">
+          <h3 class="modal-title mb-4">Login</h3>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="container-fluid">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 mb-2">
+                  <label class="sr-only" for="loginEmail">Email adress</label>
+                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-12 mb-2">
+                  <label class="sr-only" for="loginPassword">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label text-light">Remember me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row d-grid gap-2 d-flex justify-content-end mt-4 mb-2">
+
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-light">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="registerModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-bg-dark">
+          <h3 class="modal-title mb-4">Register</h3>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="container-fluid">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 mb-2">
+                  <label class="sr-only" for="loginEmail">Email adress</label>
+                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-12 mb-2">
+                  <label class="sr-only" for="loginPassword">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-row d-grid gap-2 d-flex justify-content-end mt-4 mb-2">
+
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-light">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class=" row p-4 p-md-5 mb-1 text-bg-dark">
+      <div class="col-12 px-0">
+        <h1 class="display-4 fst-italic">The journey back to Final Fantasy XIV: A Realm Reborn</h1>
+        <p class="lead my-3">A concise perspective of a journey back to the beginning...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="newsTitle">
+    <div class="row mb-1">
+      <div class="col">
+        <article>
+
+          <img src="img/ffxiv.jpg" class="img-fluid mt-3 mb-4" alt="FFXIV">
+
+          <p class="text-right mb-4">Posted on: February 26, 2023 by Xavi</p>
+          <p>Final Fantasy XIV: A Realm Reborn's first storyline can be polarizing. I decided to revisit the story after
+            years of experiencing the changes the team has made. I can say, for sure, the quality of life
+            improvements has made the experience more manageable. </p>
+
+
+          <p>The addition of trusts for main story dungeons is a welcome addition. As a DPS, you won’t have to wait
+            for a party to accomplish these dungeons. Also, the last-story dungeons for A Realm Reborn have
+            gotten revamped. They won’t last an hour like they used to. Now they are broken into smaller chunks,
+            and you can even take a nice break between dungeons.</p>
+
+          <p>However, even with the quests the team eliminated, it’s still the longest storyline up to date in the game
+            Additionally, the fact that many cutscenes aren’t voice-acted makes the experience feel like you are not
+            progressing</p>
+
+          <p>Should you start this game after all the content they have added? I would say yes. The story is more
+            enjoyable now than ever. After you finish A Realm Reborn, you will start one of the best expansions in Final
+            Fantasy XIV, Heavensward. </p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm ">
+          <ul class="list-inline">
+            <h5>Links</h5>
+          </ul>
+          <li class="list-inline-item"><a href="index.html">Home</a></li>
+          <li class="list-inline-item"><a href="feature.html">Feature</a></li>
+          <li class="list-inline-item"><a href="aboutus.html">About</a></li>
+
+        </div>
+        <div class="col col-sm ">
+          <h5>Social</h5>
+          <a class="btn btn-social-icon btn-dark" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a class="btn btn-social-icon btn-dark" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a class="btn btn-social-icon btn-dark" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a class="btn btn-social-icon btn-dark" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>
